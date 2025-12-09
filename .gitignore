@@ -1,0 +1,20 @@
+# Binaries
+rsh
+server
+serverFIFO
+user1
+user2
+
+# Debugging files
+*.dSYM/
+*.o
+
+# Test output files
+test/*.out
+
+# Editor/IDE specific files
+.DS_Store
+.vscode/
+
+# Build artifacts
+*.gch
