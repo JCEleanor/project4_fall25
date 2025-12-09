@@ -95,7 +95,7 @@ void *messageListener(void *arg)
 		}
 
 		// Print the incoming message
-		printf("\nIncoming message from %s: %s\n", incoming_msg.source, incoming_msg.msg);
+		printf("Incoming message from %s: %s\n", incoming_msg.source, incoming_msg.msg);
 		fflush(stdout);
 	}
 
