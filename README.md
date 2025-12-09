@@ -9,7 +9,7 @@ rsh>sendmsg user2 hello there!
 The command above should send the message "hello there!" to user **user2**. Note that the message is not enclosed within quotes.
 
 In this project, you will complete the missing pieces in the server and the client code. The places marked as "**TODO:**" described the expected behavious of the code snippet you will be adding at those locations.
-Specifically, you will update **server.c** and **rsh.c** to obtain a working shell with messaging capabilities. 
+Specifically, you will update **server.c** and **rsh.c** to obtain a working shell with messaging capabilities.
 
 ### Compiling, Running, and Testing Your Code
 
@@ -62,3 +62,13 @@ You can also clone your repo and work on it and push the updates from different 
 **Submission on Gradescope:**
 
 After you are logged in to your github account in a browser, if you follow the Gradescope assignment page for this project from Canvas and try to upload a submission, you will be able to select the Github submission options and select your private repository for this project to submit your solution on Gradescope.
+
+## Test
+
+```
+./rsh user1 < test/test_user1.in > user1_actual_output.txt &
+./rsh user2 < test/test_user2.in > user2_actual_output.txt &
+
+
+diff user1_actual_output.txt
+```
